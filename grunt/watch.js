@@ -8,5 +8,9 @@ module.exports = {
       '<%= jshint.test.src %>'
     ],
     tasks: ['jshint']
+  },
+  leak: {
+    files: 'test/useless.tmp',
+    tasks: ['jshint:task']
   }
 };

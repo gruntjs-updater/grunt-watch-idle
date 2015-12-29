@@ -18,7 +18,7 @@ var testTarget = {
 };
 
 describe('grunt-watch-idle task', function() {
-  this.slow(5000);
+  this.slow(15000);
   this.timeout(60000);
 
   beforeEach(function() {
@@ -56,7 +56,7 @@ describe('grunt-watch-idle task', function() {
       /*jshint -W030 */
       expect(notifier).to.have.been.calledOnce;
       done();
-    }, 750);
+    }, 5150);
   });
 
   it('Continious `watch` which fits in TIMEOUT delays notifier', function(done) {

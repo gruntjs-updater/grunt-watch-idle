@@ -14,4 +14,5 @@ module.exports = function(grunt) {
   grunt.loadTasks('tasks');
 
   grunt.registerTask('test', ['mochaTest:task']);
+  grunt.registerTask('leak', ['watch:leak']);
 };
